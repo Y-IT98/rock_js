@@ -9,28 +9,39 @@
 </head>
 <body>
     <nav class = "site_banner"> 
-        <h1> Computer Vs Player </h1>
+        <h1> Rock Paper Scissors Game  </h1>
         <div class = "coverPic">
-            <img src="../rock_js/images/cover_image.webp" alt="picture of human hand vs robot hand playing chess">
+            <img src="../rock_js/images/choices.jpeg" alt="Rock paper scissors images">
         </div> 
 
-        <h1> Rock, Paper or Scissors</h1>
+        
         <div>
-            <img src="../rock_js/images/choices.jpeg" alt="Rock paper scissors images">
+        <h2> Game score: </h2>
+            
             
         </div>
-        <div><span class="Score"> The Score is </span></div>
+        <div class = "resultCard">
+            <div class = "player"> Player: </div>
+            <div class = "computer"> Computer: </div>
+        </div>
+        
         
     </nav>
     <div class ='gameChoices'>
-          <div> <button id="rock"><img src="../rock_js/images/rock.jpeg" alt="picture of a rock"></button></div>
-          <div><button id = "paper"><img src="../rock_js/images/paper.jpeg" alt="picture of a paper"></button></div>
-          <div><button id="scissors"><img src="../rock_js/images/scissors.webp" alt="picture of scissors"></button></div>
+          <div > <button class ='gameChoices' id="rock">✊</button></div>
+          <div ><button class ='gameChoices' id = "paper">✋</button></div>
+          <div ><button class ='gameChoices'id="scissors">✌️</button></div>
 
     </div>
+
+   
+    <div><h2 class="Score"> Round Winner </h2></div>
+    <div> <h1 class="Winner"> Game winner </h1></div>
+    <div> <button class="reset"> Restart Game </button></div>
+    
     <!-- <div class = "buttons"> 
     </div> -->
-    <h2> The Score is: </h2>
+    
     
 </body>
 </html>
