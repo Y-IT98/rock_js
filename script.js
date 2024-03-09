@@ -49,13 +49,13 @@ function playRound(player_Selection, computer_selection) {
         
     ) { playerScore++
         roundsPlayed++
-        playerWin.textContent = playerScore
+        playerWin.textContent = `Player: ${playerScore}`
          resultText.textContent= "You win!"
          keepScore();
     } else {
         roundsPlayed++
         compScore++
-        computerWin.textContent = compScore
+        computerWin.textContent = `Computer: ${compScore}`
         resultText.textContent= "Computer Wins!"
         keepScore();
    
