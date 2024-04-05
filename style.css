@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(33, 96, 35);
+    background-color:   #2C2C54;
     font-size: 16px; /* Set a base font size */
 }
 
@@ -40,12 +40,12 @@ button:hover {
 }
 
 .reset {
-    background-color: darkslategray;
-    color: crimson;
+    background-color:  #ECECEC;
+    color: #474787;
 }
 
 img {
-    max-width: 60%; /* Make images responsive */
+    max-width: 40%; /* Make images responsive */
     height: auto;
     border-radius: 2.5rem;
     background: none;
@@ -58,13 +58,17 @@ img {
     margin-bottom: 2rem; /* Add some space below site banner */
 }
 
-.Score {
+.Score,h1,h2,.player,.computer {
     font-size: 2rem; /* Decrease font size for smaller screens */
     font-family: 'Times New Roman', Times, serif;
-    color: black;
+    color: darkgray;
     padding: 1rem; /* Decrease padding for smaller screens */
 }
-
+.winner,p{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ECECEC;
+}
 .resultCard {
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap on smaller screens */

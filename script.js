@@ -40,7 +40,7 @@ function playRound(player_Selection, computer_selection) {
 
      if (player_Selection === computer_selection) {
         
-        resultText.textContent="Its a Tie !";
+        resultText.textContent="Its a Tie and we dont count those !";
         
     } else if (
         (player_Selection === "rock" && computer_selection === "scissors") ||
@@ -50,13 +50,13 @@ function playRound(player_Selection, computer_selection) {
     ) { playerScore++
         roundsPlayed++
         playerWin.textContent = `Player: ${playerScore}`
-         resultText.textContent= "You win!"
+         resultText.textContent= "You won this round , dont drop the ball now "
          keepScore();
     } else {
         roundsPlayed++
         compScore++
         computerWin.textContent = `Computer: ${compScore}`
-        resultText.textContent= "Computer Wins!"
+        resultText.textContent= "You lost the round, Maybe you should stick to baking 👀 "
         keepScore();
    
     }
@@ -97,7 +97,7 @@ function keepScore(){
     const whoWon = document.querySelector('.Winner')
     
         if ((playerScore>compScore) && (roundsPlayed === 5)) {
-            whoWon.textContent = "The player won the series, Game over";
+            whoWon.textContent = "Cool happy fresh! You WON! maybe baking isnt the only thing ur good at  ";
             gameButtons.forEach(button =>{
                 button.disabled = true;
             })
@@ -105,7 +105,7 @@ function keepScore(){
             
             
         } else if((compScore > playerScore) && (roundsPlayed === 5)){
-            whoWon.textContent = "The computer won the series, Game over";
+            whoWon.textContent = "Elise you actually lost to my below average CPU, an IQ test is in order when you're back 😬";
             gameButtons.forEach(button =>{
                 button.disabled = true;
             })
